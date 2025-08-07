@@ -1,18 +1,29 @@
-
 h1 {
     text-align: center;
     font-size: 40px;
     letter-spacing: 10px;
 }
 
+/* Aplica el box-sizing globalmente para evitar problemas de cálculo de ancho con el padding */
+* {
+    box-sizing: border-box;
+}
+
 .productos {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px; */
+    gap: 10px;
 }
 
+/* Establece el ancho del contenedor de cada producto */
 .producto {
     border: 1px solid #ccc;
     padding: 10px;
-    width: 25%;
+    width: 24%;
+}
+
+/* Asegúrate de que las imágenes se ajusten al contenedor del producto */
+.producto img {
+    max-width: 100%; /* La clave para que la imagen se adapte al 100% del ancho del 'article' */
+    height: auto;   /* Mantiene la proporción de la imagen */
 }
