@@ -8,9 +8,9 @@ import { Productss } from '../../services/products';
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
-export class Productos {
+export class Products {
   products: Product[] = [];
-  constructor(private product:Productss){
+  constructor(private product: Productss) {
     this.products = this.product.getProducts();
   }
 }
