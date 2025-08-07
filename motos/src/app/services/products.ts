@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-
 export interface Product {
   id: number;
   name: string;
@@ -11,9 +7,13 @@ export interface Product {
   cost: number;
   image: string;
 }
+@Injectable({
+  providedIn: 'root'
+})
 
-export class Products {
-  
+
+export class Productss {
+
   private products: Product[] = [
     {
       id: 1,
@@ -44,7 +44,7 @@ export class Products {
       image: '/img/suzuki-1200.jpg'
     }
   ]
-  
+
   constructor() { }
 
   getProducts(): Product[] {
