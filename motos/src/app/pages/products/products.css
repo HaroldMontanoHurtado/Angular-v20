@@ -9,6 +9,17 @@ h1 {
     box-sizing: border-box;
 }
 
+.banner-img {
+    display: block;  /* Convierte la imagen en un elemento de bloque */
+    margin-left: auto;
+    margin-right: auto;
+    /* O la forma abreviada: */
+    /* margin: 0 auto; */
+
+    max-width: 100%;
+    height: auto;
+}
+
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +35,8 @@ h1 {
 
 /* Asegúrate de que las imágenes se ajusten al contenedor del producto */
 .producto img {
-    max-width: 100%; /* La clave para que la imagen se adapte al 100% del ancho del 'article' */
-    height: auto;   /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    /* La clave para que la imagen se adapte al 100% del ancho del 'article' */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
 }
